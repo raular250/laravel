@@ -47,13 +47,13 @@ class HomeController extends Controller
         // $permissions = $user->getPermissionsViaRoles();
         // dump($permissions);
 
-        $user=Auth::User();
-        $user->removeRole('writer');
-        $role=Role::findByName('writer');
-        $role->revokePermissionTo('edit articles');
-        $permission=Permission::findByName('edit articles');
-        $permission->delete();
-        $role->delete();
+        // $user=Auth::User();
+        // $user->removeRole('writer');
+        // $role=Role::findByName('writer');
+        // $role->revokePermissionTo('edit articles');
+        // $permission=Permission::findByName('edit articles');
+        // $permission->delete();
+        // $role->delete();
 
         dd('stop');
         return view('home');
