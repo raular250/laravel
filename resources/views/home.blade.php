@@ -20,4 +20,9 @@
         </div>
     </div>
 </div>
+<script>
+    setTimeout(function() {
+        window.location.href = "/"
+    }, 2000); // 2 second
+</script>
 @endsection

@@ -55,7 +55,7 @@ class HomeController extends Controller
         // $permission->delete();
         // $role->delete();
 
-        dd('stop');
+        // dd('stop');
         return view('home');
     }
 }
